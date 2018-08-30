@@ -1,0 +1,62 @@
+/* pages/coach/newCourse/newCourse.wxss */
+page{
+  min-height: 100%;
+}
+.container{
+  height: 100%;
+  align-items: center;
+  padding: 20px 0px;
+}
+.avatar{
+  height:220rpx;
+  width:220rpx;
+  border-radius:10px;
+  margin-bottom:70rpx;
+}
+form{
+  width:100%;
+  box-sizing:border-box;
+  padding:0px 10px;
+}
+label{
+  display:flex;
+  align-items:center;
+  margin-bottom:40rpx;
+  color: #333333;
+}
+label text{
+  display: inline-block;
+  width: 200rpx;
+  text-align: right;
+}
+input{
+  border-bottom: 1px solid;
+  text-align: center;
+}
+button{
+  background:#239923;
+  color:#fafafa;
+  font-weight:bold;
+  margin-top:100rpx;
+  width: 55%;
+}
+.title{
+  margin-bottom: 100rpx;
+}
+.title text{
+  font-size:22px;
+  font-weight:bold;
+  color:#535353;
+}
+.last-label{
+  flex-direction: column;
+  align-items: left;
+}
+textarea{
+  border:1px solid #878787;
+  min-height:100px;
+  width: 80%;
+  margin: 30rpx auto 0px;
+  border-radius: 5px;
+  padding: 5px;
+}

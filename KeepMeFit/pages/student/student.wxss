@@ -1,0 +1,114 @@
+/* pages/student/student.wxss */
+.userInfo{
+  margin: 10px 0px 18px;
+}
+.userInfo>image{
+  width: 50px;
+  height: 50px;
+  margin-right:30px;
+  border-radius:30px;
+}
+.userInfo>text{}
+.userInfo>view.btn{
+  font-size:14px;
+  padding:1px;
+  width:50px;
+  margin:0px;
+  margin-left:20px;
+}
+.container{}
+.contain-box{
+  width: 95%;
+  margin:0px auto 25px;
+  padding-bottom:8px;
+  box-shadow:0 12px 20px -15px;
+}
+.message-box{}
+.course-box{}
+.course-container{}
+.course-info-item{
+  margin-bottom: 6px;
+}
+.course-info-item>text{
+  margin-left: 10px;
+  min-width: 75px;
+  text-align: center;
+}
+.course-container>scroll-view{
+  height: 140px;
+}
+
+.occ{
+  padding-left:20px;
+  box-sizing:border-box;
+}
+.occ .time-tips{
+  font-weight:bold;
+  font-size:18px;
+  margin: 10px 0px;
+}
+.occ>.name{
+  font-weight:bolder;
+  font-size:18px;
+  text-decoration:underline;
+}
+.occ view{
+  margin-bottom: 5px;
+}
+.title{
+  font-weight:bold;
+  font-size:18px;
+  margin-bottom:8px;
+  border-left:5px solid;
+  color:#382383;
+  padding-left: 6px;
+}
+.tip-text{
+  font-size:14px;
+  color:#515151;
+  text-align: center;
+}
+.link-btn{
+  text-align:center;
+  margin:10px auto 5px;
+  color:#121277;
+  font-size:14px;
+  text-decoration:underline;
+}
+.course-detail{
+  position:absolute;
+  background:#fafafa;
+  top:10px;
+  left: 5%;
+  width:90%;
+  box-shadow:0 0 10px #a0a0a0;
+  padding:10px;
+  box-sizing:border-box;
+  border-radius: 10px;
+  color: #363666;
+  min-height: 70%;
+}
+.course-detail .name{
+  font-weight:bold;
+  font-size:22px;
+  margin:10px 0px 15px;
+  text-align: center;
+}
+.course-detail .describe{
+  text-indent: 2em;
+  margin-bottom: 25px;
+}
+.course-detail view{
+  margin-bottom: 18px;
+}
+
+.btn{
+  width:40%;
+  text-align:center;
+  margin:0 auto;
+  font-weight:bold;
+  color:#823232;
+  border:1px solid;
+  padding:10px 0px;
+  border-radius:5px;
+}

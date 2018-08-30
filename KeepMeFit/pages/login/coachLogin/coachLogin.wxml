@@ -1,0 +1,15 @@
+<!--pages/login/coachLogin/coachLogin.wxml-->
+<view class='container justify-center'>
+  <image class='avatar' src='{{avatarUrl}}' mode='aspectFit'></image>
+  <form bindsubmit='LoginCheck'>
+    <label>
+      <text>账号：</text>
+      <input name='account'></input>
+    </label>
+    <label>
+      <text>密码：</text>
+      <input name='password' type='password'></input>
+    </label>
+    <button form-type='submit'>登录</button>
+  </form>
+</view>

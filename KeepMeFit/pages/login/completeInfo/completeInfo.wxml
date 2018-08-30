@@ -1,0 +1,19 @@
+<!-- 完善个人信息页面 -->
+<view class='container justify-center'>
+  <view class='title'><text>请您完善个人信息</text></view>
+  <form bindsubmit='CompleteInfo'>
+    <label>
+      <text>姓名：</text>
+      <input name='name'></input>
+    </label>
+    <label>
+      <text>电话：</text>
+      <input name='phone'></input>
+    </label>
+    <label wx:if='{{userType == "coach"}}'>
+      <text>微信：</text>
+      <input name='wechat'></input>
+    </label>
+    <button form-type='submit'>提交</button>
+  </form>
+</view>

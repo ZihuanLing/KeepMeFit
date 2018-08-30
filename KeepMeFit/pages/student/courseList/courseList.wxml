@@ -1,0 +1,36 @@
+<!--pages/student/courseList/courseList.wxml-->
+<view class='row search-box justify-center'>
+  <picker mode='selector' name='name' value='1' range='{{range}}' range-key='value' bindchange='OnPickerChange'>按{{pickerValue}}</picker>
+  <input name='seachValue' value='{{inputValue}}' bindchange='OnInputChange' confirm-type='search' bindconfirm='SearchData'></input>
+  <image src='/images/icons/search.png' mode='aspectFit' catchtap='SearchData'></image>
+</view>
+<view class='container'>
+  <block  wx:if='{{showSearchResult}}'>
+    <view class='tips'>共找到{{searchResult.length}}条结果</view>
+    <icon type='cancel' size='30' catchtap='HideSearchResult'></icon>
+  </block>
+  <block wx:for='{{showSearchResult?searchResult:courses}}' wx:for-item='c' wx:key='_id' wx:for-index='idx'>
+  <view class='course-box'>
+    <view class='course-title'>{{c.name}}</view>
+    <view class='coach-info row'>
+      <image src='{{c.coachAvatar}}' mode='aspectFit'></image>
+      <text>{{c.coach}}</text>
+    </view>
+    <view class='course-info'>
+      <view class='describe'>
+        <text>{{c.describe}}</text>
+      </view>
+      <view class='row justify-around'>
+        <text>{{c.time}}上课</text>
+        <text>共{{c.totalNum}}个课时</text>
+      </view>
+      <view style='font-weight:bold;'>预约日期：</view>
+      <view style='text-align:center;'>{{c.startDate}} -- {{c.endDate}}</view>
+    </view>
+    <view class='select-btn' data-id='{{c._id}}' catchtap='ParticipateCourse'>预约</view>
+  </view>
+  </block>
+</view>
+<view wx:if='{{!courses}}' class='non-course-box'>
+  Oops!还没有课程哦~
+</view>

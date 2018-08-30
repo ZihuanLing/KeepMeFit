@@ -1,0 +1,30 @@
+<!--pages/coach/coach.wxml-->
+<view class='container'>
+  <view class='coach-info column'>
+    <image src='{{userInfo.avatarUrl}}' mode='aspectFit' class='avatar'></image>
+    <text>{{userInfo.name}}</text>
+    <text>{{userInfo.phone}}</text>
+    <text>课程数：{{courses.length}}</text>
+  </view>
+
+  <view class='exit-btn' catchtap='ExitCoach'>退出</view>
+
+  <view class='courses-container'>
+    <view class='title'>课程列表</view>
+    <block wx:for='{{courses}}' wx:for-item='c' wx:for-index='idx'>
+    <view class='course-container column' data-course-id='{{c._id}}' catchtap='ToStudentList'>
+      <text>{{c.name}}</text>
+      <text>{{c.time}}</text>
+      <text>{{c.startDate}} -- {{c.endDate}}</text>
+      <text>课时：{{c.leftNum}}/{{c.totalNum}}</text>
+      <view class='course-student-container column'>
+        <text>学员数：{{c.studentList.length}}</text>
+      </view>
+    </view>
+    </block>
+  </view>
+
+  <view class='icon' catchtap='ToNewCourse'>
+    <image src='/images/icons/add.png' mode='aspectFit' style='width:100%;height:100%;'></image>
+    </view>
+</view>

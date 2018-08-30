@@ -1,0 +1,89 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "",
+	"projectname": "KeepMeFit",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "教练登录",
+					"pathName": "pages/login/coachLogin/coachLogin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "完善教练信息",
+					"pathName": "pages/login/completeInfo/completeInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "教练页面",
+					"pathName": "pages/coach/coach",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "创建新课程",
+					"pathName": "pages/coach/newCourse/newCourse",
+					"query": "coachId=123"
+				},
+				{
+					"id": 4,
+					"name": "学生列表 - 课程详情",
+					"pathName": "pages/coach/studentList/studentList",
+					"query": "courseId=5b82374ea80f712d910b34c2"
+				},
+				{
+					"id": -1,
+					"name": "修改课程",
+					"pathName": "pages/coach/modifyCourse/modifyCourse",
+					"query": "courseId=001"
+				},
+				{
+					"id": -1,
+					"name": "学生界面",
+					"pathName": "pages/student/student",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "课程列表",
+					"pathName": "pages/student/courseList/courseList",
+					"query": ""
+				}
+			]
+		}
+	}
+}

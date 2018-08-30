@@ -1,0 +1,46 @@
+/* pages/coach/studentList/studentList.wxss */
+.container{}
+.write-icon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+}
+.course-container{
+  align-items: left;
+  padding:10px 15px;
+  box-sizing:border-box;
+}
+.course-container>text{
+  margin: 3px 0px;
+}
+.course-container>text:first-child{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.course-student-container{
+  margin-top: 20px;
+}
+.student-list{}
+.student-item{
+  justify-content:space-around;
+  border-bottom:1px solid #989898;
+  width:95%;
+  margin:0 auto;
+  margin-top:10px;
+  padding-bottom:8px;
+  color: #343443;
+}
+.student-item:last-child{
+  margin-bottom: 15px;
+  border: none;
+}
+.student-item>image{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.student-item>text{}

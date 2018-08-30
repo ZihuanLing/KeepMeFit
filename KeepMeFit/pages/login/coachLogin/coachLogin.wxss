@@ -1,0 +1,27 @@
+/* pages/login/coachLogin/coachLogin.wxss */
+.container{
+  align-items: center;
+  padding: 50px 0px;
+}
+.avatar{
+  height:220rpx;
+  width:220rpx;
+  border-radius:10px;
+  margin-bottom:70rpx;
+}
+label{
+  display:flex;
+  align-items:center;
+  margin-bottom:40rpx;
+  color: #333333;
+}
+input{
+  border-bottom: 1px solid;
+  text-align: center;
+}
+button{
+  background:#239923;
+  color:#fafafa;
+  font-weight:bold;
+  margin-top:100rpx;
+}

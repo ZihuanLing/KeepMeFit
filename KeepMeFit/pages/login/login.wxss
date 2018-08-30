@@ -1,0 +1,19 @@
+/* pages/login/login.wxss */
+page{
+  height: 100%;
+}
+.container{
+  height: 100%;
+  justify-content: center;
+}
+.btn:first-child{
+  margin-bottom: 22px;
+}
+.btn{
+  width: 66%;
+  height: 110rpx;
+  line-height: 110rpx;
+  background: #239922;
+  color: #fafafa;
+  font-weight: bold;
+}

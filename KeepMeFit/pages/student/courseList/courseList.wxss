@@ -1,0 +1,102 @@
+/* pages/student/courseList/courseList.wxss */
+.search-box{
+  border-bottom:1px solid #c8c8c8;
+  padding-bottom:10px;
+  box-sizing:border-box;
+}
+.search-box>picker{}
+.search-box>image{
+  width: 25px;
+  height: 30px;
+  opacity: 0.7;
+}
+.search-box>input{
+  border-bottom: 1px solid;
+  margin: 0px 12rpx;
+  text-align: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.container{
+  padding: 10px 0px 20px;
+}
+.tips{
+  text-align: center;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 10px;
+}
+icon{
+  position: absolute;
+  right: 20px;
+}
+.course-box{
+  box-sizing:border-box;
+  padding:5px 10px 5px 20px;
+  margin:0px 0px 20px;
+  box-shadow:0 6px 20px -10px;
+  border-radius: 10px;
+}
+.course-title{
+  font-weight: bolder;
+  font-size: 22px;
+  color:#282828;
+  text-align:center;
+  border-bottom:1px solid #909090;
+  width:50%;
+  min-width: 50%;
+  padding-bottom:10rpx;
+  margin: 0px auto 10px;
+}
+.coach-info{
+  margin-bottom: 20rpx;
+}
+.coach-info>image{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50px;
+  margin: 0 20px;
+}
+.coach-info>text{
+  font-size: 18px;
+  font-weight:bold;
+  color:#282828;
+}
+.course-info{
+  color: #313131;
+}
+.course-info>view{
+  margin-bottom:15rpx;
+}
+.course-info>.describe{
+  text-align:center;
+  padding:10px;
+  box-sizing:border-box;
+}
+.describe>text{
+  border-left:10px solid #878787;
+  width:90%;
+  max-width: 90%;
+  display:inline-block;
+  box-sizing: border-box;
+}
+.select-btn{
+  width:40%;
+  margin:20px auto 10px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  background:#288228;
+  color:#fafafa;
+  padding:10px 0px;
+  border-radius:5px;
+}
+.non-course-box{
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 50px 0px;
+}

@@ -1,0 +1,22 @@
+<!--pages/coach/studentList/studentList.wxml-->
+<view class='container'>
+  <image src='/images/icons/write.png' mode='aspectFit' class='write-icon' catchtap='ToModifyCourse'></image>
+  <view class='course-container column'>
+      <text>{{name}}</text>
+      <text>{{time}}</text>
+      <text>{{startDate}} -- {{endDate}}</text>
+      <text>课时：{{leftNum}}/{{totalNum}}</text>
+      <view class='course-student-container column'>
+        <text>学员数：{{studentList.length}}</text>
+      </view>
+    </view>
+    <view class='student-list'>
+      <block wx:for='{{studentList}}' wx:for-item='s'>
+      <view class='row student-item'>
+        <image mode='aspectFit' src='{{s.avatar}}'></image>
+        <text>{{s.name}}</text>
+        <text>{{s.phone}}</text>
+      </view>
+      </block>
+    </view>
+</view>

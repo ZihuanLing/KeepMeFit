@@ -1,0 +1,10 @@
+/* pages/login/completeInfo/completeInfo.wxss */
+@import "../coachLogin/coachLogin.wxss";
+.title{
+  margin-bottom: 100rpx;
+}
+.title text{
+  font-size:22px;
+  font-weight:bold;
+  color:#535353;
+}

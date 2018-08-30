@@ -1,0 +1,23 @@
+{
+  "debug": true,
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/login/completeInfo/completeInfo",
+    "pages/login/coachLogin/coachLogin",
+    "pages/coach/coach",
+    "pages/coach/newCourse/newCourse",
+    "pages/coach/modifyCourse/modifyCourse",
+    "pages/coach/studentList/studentList",
+    "pages/student/student",
+    "pages/student/courseList/courseList"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Keep Me Fit",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

@@ -1,0 +1,38 @@
+<!--pages/coach/modifyCourse/modifyCourse.wxml-->
+<view class='container'>
+  <form bindsubmit='SubmitChange'>
+    <label>
+      <text>课程名：</text>
+      <input name='name' value='{{name}}'></input>
+    </label>
+    <label>
+      <text>上课时间：</text>
+      <picker name='time' mode='time' value='{{time}}' bindchange='OnPickerChange' data-type='time'>{{time}}</picker>
+    </label>
+    <label>
+      <text>开始日期：</text>
+      <picker name='startDate' mode='date' value='{{startDate}}' bindchange='OnPickerChange' data-type='startDate' start='{{startDate}}'>{{startDate}}</picker>
+    </label>
+    <label>
+      <text>截止日期：</text>
+      <picker name='endDate' mode='date' value='{{endDate}}' bindchange='OnPickerChange' data-type='endDate' start='{{startDate}}'>{{endDate}}</picker>
+    </label>
+    <label>
+      <text>上课地点：</text>
+      <input name='place' value='{{place}}'></input>
+    </label>
+    <label>
+      <text>总课程数：</text>
+      <input name='totalNum' type='number' value='{{totalNum}}'></input>
+    </label>
+    <label>
+      <text>剩余课程：</text>
+      <input name='leftNum' type='number' value='{{leftNum}}'></input>
+    </label>
+    <label class='last-label'>
+      <text>课程描述：</text>
+      <textarea name='describe' auto-height='true' cursor-spacing='50' maxlength='300' value='{{describe}}'></textarea>
+    </label>
+    <button form-type='submit'>提交</button>
+  </form>
+</view>

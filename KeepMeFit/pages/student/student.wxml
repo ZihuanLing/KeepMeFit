@@ -1,0 +1,66 @@
+<!--pages/student/student.wxml-->
+<!-- 个人信息 -->
+<view class='userInfo row justify-center'>
+  <image mode='aspectFit' src='{{userInfo.avatarUrl}}'></image>
+  <text>{{userInfo.nickName}}</text>
+  <view class='btn' catchtap='UserExit'>退出</view>
+</view>
+<view class='container'>
+  <!-- 我的消息 -->
+  <view class='message-box contain-box'>
+    <view class='title'>消息</view>
+    <view class='tip-text'>暂无消息</view>
+  </view>
+  <!-- 我的课程 -->
+  <view class='course-box contain-box'>
+    <view class='title'>我的课程</view>
+    <view class='tip-text' wx:if='{{myCourses.length == 0}}'>暂无课程</view>
+    <view wx:else class='course-container'>
+      <scroll-view scroll-y='true' scroll-x='true'>
+        <view class='row course-info-item' style='font-weight:bold;'>
+          <text>教练</text>
+          <text>时间</text>
+          <text>课时</text>
+          <text>课程名</text>
+          <text>地点</text>
+        </view>
+        <block wx:for='{{myCourses}}' wx:for-item='mc' wx:for-index='idx'>
+        <view class='row course-info-item' data-id='{{mc._id}}' catchtap='ViewCourseDetail'>
+          <text>{{mc.coach}}</text>
+          <text>{{mc.time}}</text>
+          <text>{{mc.leftNum}}/{{mc.totalNum}}</text>
+          <text>{{mc.name}}</text>
+          <text>{{mc.place}}</text>
+        </view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class='link-btn' catchtap='ToCourseList'>去选课 >>></view>
+  </view>
+  <!-- 即将上课 -->
+  <view class='contain-box'>
+    <view class='title'>即将上课</view>
+    <view class='tip-text' wx:if='{{!occ}}'>暂无</view>
+    <view wx:else class='occ '>
+      <view class='time-tips'>即将在 {{occ.time}} 上课</view>
+      <view class='name'>{{occ.name}}</view>
+      <view>地点：{{occ.place}}</view>
+      <view>剩余课时：{{occ.leftNum}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 课程细节悬浮窗 -->
+<view class='course-detail' wx:if='{{showDetail}}'>
+  <icon type='cancel' size='30' catchtap='HideDetailCourse' style='position:absolute;top:20px;right:20px;' color='#823232'></icon>
+  <view class='name'>{{dtc.name}}</view>
+  <view class='describe'>{{dtc.describe}}</view>
+  <view>时间：{{dtc.time}}</view>
+  <view>地点：{{dtc.place}}</view>
+  <view>{{dtc.startDate}}到{{dtc.endDate}}截止预约</view>
+  <view>课时{{dtc.leftNum}}/{{dtc.totalNum}}</view>
+  <view>教练：{{dtc.coach}}</view>
+  <view>电话：{{dtc.phone}}</view>
+  <view>微信：{{dtc.wechat}}</view>
+  <view class='btn' catchtap='CancelCourse' data-id='{{dtc._id}}'>取消预约</view>
+</view>

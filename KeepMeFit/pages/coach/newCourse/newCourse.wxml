@@ -1,0 +1,35 @@
+<!--pages/coach/newCourse/newCourse.wxml-->
+<view class='container justify-center'>
+  <view class='title'><text>新建课程</text></view>
+  <form bindsubmit='CreateNewCourse'>
+    <label>
+      <text>课程名：</text>
+      <input name='name' value='{{defaultValue}}'></input>
+    </label>
+    <label>
+      <text>上课时间：</text>
+      <picker name='time' mode='time' value='{{pickerTime}}' bindchange='OnPickerChange' data-type='pickerTime'>{{pickerTime}}</picker>
+    </label>
+    <label>
+      <text>开始日期：</text>
+      <picker name='startDate' mode='date' value='{{startDate}}' bindchange='OnPickerChange' data-type='startDate' start='{{startDate}}'>{{startDate}}</picker>
+    </label>
+    <label>
+      <text>截止日期：</text>
+      <picker name='endDate' mode='date' value='{{endDate}}' bindchange='OnPickerChange' data-type='endDate' start='{{startDate}}'>{{endDate}}</picker>
+    </label>
+    <label>
+      <text>上课地点：</text>
+      <input name='place' value='{{defaultValue}}'></input>
+    </label>
+    <label>
+      <text>总课程数：</text>
+      <input name='totalNum' type='number' value='{{defaultValue}}'></input>
+    </label>
+    <label class='last-label'>
+      <text>课程描述：</text>
+      <textarea name='describe' auto-height='true' cursor-spacing='50' maxlength='300' value='{{defaultValue}}'></textarea>
+    </label>
+    <button form-type='submit'>提交</button>
+  </form>
+</view>
